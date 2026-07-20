@@ -1,126 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jeff the Killer | La sonrisa que nunca desaparece</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+    <title>Jeff the Killer | Expediente Clasificado</title>
 
-html{
-    scroll-behavior:smooth;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-body{
-    color:white;
-    line-height:1.8;
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
-    background:
-        linear-gradient(
-            rgba(90,0,20,.55),
-            rgba(35,0,0,.75),
-            rgba(0,0,0,.92)
-        ),
-        url("https://static.vecteezy.com/system/resources/thumbnails/072/689/333/small/a-dramatic-black-and-white-image-features-tall-bare-trees-in-a-misty-forest-with-bright-light-shining-through-the-distant-background-photo.jpg");
+    <style>
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-}
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
 
-.container{
-    width:85%;
-    max-width:1000px;
-    margin:auto;
-    padding:50px 0;
-}
+        html{
+            scroll-behavior:smooth;
+        }
 
-header{
-    text-align:center;
-    margin-bottom:40px;
-}
+        body{
 
-header h1{
-    font-size:3.4em;
-    color:#ff4d4d;
-    text-shadow:
-    0 0 8px #ff0000,
-    0 0 20px crimson,
-    0 0 35px darkred;
-}
+            font-family:'Special Elite', cursive;
+            color:#111;
 
-header p{
-    margin-top:15px;
-    color:#dddddd;
-    font-size:1.1em;
-}
+            background:
+            linear-gradient(rgba(50,0,0,.40),rgba(0,0,0,.60)),
+            url("forest.jpg");
 
-section{
-    background:rgba(0,0,0,.55);
-    backdrop-filter:blur(5px);
-    padding:30px;
-    border-radius:18px;
-    margin-bottom:30px;
-    border:1px solid rgba(255,0,0,.25);
-    box-shadow:0 0 20px rgba(255,0,0,.15);
-}
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
 
-h2{
-    color:#ff6666;
-    margin-bottom:18px;
-    border-left:6px solid crimson;
-    padding-left:12px;
-}
+        }
 
-p{
-    text-align:justify;
-}
+        .fog{
 
-ul{
-    margin-left:25px;
-}
+            position:fixed;
+            width:100%;
+            height:100%;
+            pointer-events:none;
 
-li{
-    margin-bottom:12px;
-}
+            background:
+            radial-gradient(circle at 30% 40%, rgba(255,255,255,.07), transparent 40%),
+            radial-gradient(circle at 70% 80%, rgba(255,255,255,.06), transparent 45%);
 
-blockquote{
-    margin-top:20px;
-    padding:15px;
-    background:rgba(255,0,0,.12);
-    border-left:5px solid crimson;
-    font-style:italic;
-    text-align:center;
-    font-size:1.2em;
-}
+            animation:fog 18s infinite alternate;
+        }
 
-footer{
-    text-align:center;
-    color:#bdbdbd;
-    padding:30px;
-    font-size:.9em;
-}
-</style>
+        @keyframes fog{
+
+            from{
+
+                transform:translateX(-40px);
+
+            }
+
+            to{
+
+                transform:translateX(40px);
+
+            }
+
+        }
+
+        .container{
+
+            width:90%;
+            max-width:950px;
+
+            margin:50px auto;
+
+        }
+
+        header{
+
+            text-align:center;
+            margin-bottom:40px;
+
+        }
+
+        header h1{
+
+            font-size:3.6em;
+            color:#8b0000;
+
+            text-shadow:
+            0 0 5px white,
+            0 0 20px rgba(255,0,0,.35);
+
+        }
+
+        header p{
+
+            margin-top:15px;
+
+            color:#f5f5f5;
+
+            font-size:1.2em;
+
+            text-shadow:2px 2px 5px black;
+
+        }
+
+        section{
+
+            background:rgba(247,239,220,.86);
+
+            border-radius:18px;
+
+            padding:30px;
+
+            margin-bottom:35px;
+
+            box-shadow:0 0 25px rgba(0,0,0,.5);
+
+            border-left:8px solid darkred;
+
+        }
+
+        h2{
+
+            color:#6e0000;
+
+            margin-bottom:18px;
+
+        }
+
+        p{
+
+            text-align:justify;
+
+            font-size:18px;
+
+            line-height:1.9;
+
+        }
+
+        ul{
+
+            margin-left:25px;
+
+            line-height:2;
+
+            font-size:18px;
+
+        }
+
+        blockquote{
+
+            margin-top:25px;
+
+            text-align:center;
+
+            font-size:30px;
+
+            color:darkred;
+
+            text-shadow:1px 1px 4px white;
+
+        }
+
+        footer{
+
+            color:white;
+
+            text-align:center;
+
+            margin:40px;
+
+            text-shadow:2px 2px 5px black;
+
+        }
+
+    </style>
 
 </head>
+
 <body>
+
+<div class="fog"></div>
 
 <div class="container">
 
 <header>
 
-<h1>☠ Jeff the Killer: La sonrisa que nunca desaparece ☠</h1>
+<h1>☠ Expediente Clasificado: Jeff the Killer ☠</h1>
 
 <p>
-El asesino más famoso de las creepypastas, cuya mirada vacía y sonrisa eterna
-siguen aterrorizando Internet desde hace más de una década.
+"Algunas leyendas desaparecen con el tiempo... otras solo esperan a que cierres los ojos."
 </p>
 
 </header>
@@ -130,72 +204,71 @@ siguen aterrorizando Internet desde hace más de una década.
 <h2>📖 Introducción</h2>
 
 <p>
-Jeff the Killer es uno de los personajes más conocidos del terror en Internet.
-Su historia nació como una creepypasta y rápidamente se volvió viral gracias a
-su inquietante apariencia: piel completamente blanca, ojos abiertos de forma
-permanente y una enorme sonrisa marcada en su rostro. Aunque se trata de un
-personaje ficticio, su leyenda se convirtió en un ícono del horror digital y
-continúa inspirando historias, videojuegos, animaciones y fanarts en todo el
-mundo.
+
+Jeff the Killer es uno de los personajes más emblemáticos del terror en Internet.
+Su aterradora apariencia, su perturbadora sonrisa y la frase "Go to Sleep"
+hicieron que esta creepypasta se volviera famosa en todo el mundo.
+
+Aunque nunca existió realmente, su historia continúa siendo una de las más
+recordadas por los fanáticos del horror digital.
+
 </p>
 
 </section>
 
 <section>
 
-<h2>🩸 Historia de la Creepypasta</h2>
+<h2>🩸 Historia</h2>
 
 <p>
-La historia cuenta que Jeff era un adolescente común que acababa de mudarse con
-su familia a un nuevo vecindario. Allí comenzó a sufrir constantes agresiones
-por parte de un grupo de jóvenes, hasta que una pelea terminó despertando un
-lado extremadamente violento de su personalidad.
-</p>
 
-<p>
-Tiempo después, durante una fiesta de cumpleaños, los agresores regresaron para
-vengarse. En medio del enfrentamiento, Jeff fue rociado con alcohol y terminó
-envuelto en llamas. Contra todo pronóstico sobrevivió, aunque sufrió graves
-quemaduras que deformaron completamente su rostro.
-</p>
+Jeff era un adolescente aparentemente normal que se mudó con su familia a un
+nuevo vecindario. Allí comenzó a sufrir constantes agresiones por parte de un
+grupo de jóvenes.
 
-<p>
-Cuando le retiraron las vendas en el hospital descubrió que su piel había quedado
-completamente blanca y que sus labios prácticamente habían desaparecido. Al verse
-en el espejo comenzó a reír de manera descontrolada. Luego se realizó cortes
-desde las comisuras de la boca hasta las mejillas para mantener una sonrisa
-permanente y quemó sus párpados para no volver a cerrar los ojos.
-</p>
+Todo cambió durante una pelea que terminó despertando un comportamiento
+extremadamente violento.
 
-<p>
-Consumido por la locura, asesinó a sus padres y a su hermano antes de escapar
-de su casa. Desde entonces, según la leyenda, vaga por las noches buscando nuevas
-víctimas mientras les susurra una única frase...
+Días después, durante una fiesta, volvió a enfrentarse con ellos.
+En medio del caos fue rociado con alcohol y terminó envuelto en llamas.
+
+Sobrevivió, pero sufrió graves quemaduras que deformaron completamente su
+rostro.
+
+Cuando se vio en el espejo, perdió la cordura.
+
+Se cortó las comisuras de la boca para mantener una sonrisa permanente y quemó
+sus párpados para no volver a cerrar los ojos.
+
+Después asesinó a su familia y desapareció para siempre.
+
+Desde entonces, la leyenda cuenta que aparece durante la noche observando a sus
+víctimas antes de susurrar...
+
 </p>
 
 <blockquote>
+
 "Go to Sleep..."
+
 </blockquote>
 
 </section>
 
 <section>
 
-<h2>📚 Historia del personaje</h2>
+<h2>📚 Historia de la Creepypasta</h2>
 
 <p>
-Jeff the Killer apareció en Internet alrededor del año 2008 y alcanzó gran
-popularidad en foros dedicados a historias de terror. Con el paso del tiempo
-surgieron múltiples versiones sobre su origen, diferentes ilustraciones y nuevas
-adaptaciones creadas por la comunidad, por lo que actualmente no existe una única
-historia considerada oficial.
-</p>
 
-<p>
-Su imagen más conocida también generó numerosos debates y teorías debido a una
-fotografía editada que durante años fue compartida como si fuera el verdadero
-rostro de Jeff. Esa fotografía terminó convirtiéndose en uno de los símbolos más
-reconocibles de las creepypastas.
+Jeff the Killer apareció alrededor del año 2008 en distintos foros de Internet.
+
+Su historia se volvió viral rápidamente y con el tiempo surgieron muchas
+versiones diferentes de su origen.
+
+La famosa imagen de su rostro también fue objeto de numerosas teorías y terminó
+convirtiéndose en uno de los íconos más reconocibles de las creepypastas.
+
 </p>
 
 </section>
@@ -205,11 +278,14 @@ reconocibles de las creepypastas.
 <h2>😈 Personalidad</h2>
 
 <p>
-Después del accidente, Jeff pierde completamente la cordura. Se vuelve un asesino
-frío, impredecible y extremadamente violento. No siente culpa por sus acciones y
-parece disfrutar sembrando miedo entre sus víctimas. Su sonrisa permanente refleja
-la transformación definitiva de un joven común en un monstruo capaz de matar sin
-mostrar ningún tipo de remordimiento.
+
+Después del incendio, Jeff pierde completamente la empatía.
+
+Disfruta sembrando miedo, actúa de forma impulsiva y demuestra una enorme
+crueldad hacia cualquiera que se cruce en su camino.
+
+Su sonrisa permanente representa la pérdida total de su humanidad.
+
 </p>
 
 </section>
@@ -220,21 +296,11 @@ mostrar ningún tipo de remordimiento.
 
 <ul>
 
-<li>
-<b>1.</b> La frase <i>"Go to Sleep"</i> es una de las citas más famosas de toda la
-historia de las creepypastas.
-</li>
+<li>Su frase "Go to Sleep" es una de las más famosas del terror en Internet.</li>
 
-<li>
-<b>2.</b> Existen decenas de versiones diferentes sobre el origen de Jeff,
-escritas por distintos autores a lo largo de los años.
-</li>
+<li>Existen decenas de versiones distintas sobre su origen; ninguna es considerada completamente oficial.</li>
 
-<li>
-<b>3.</b> Jeff the Killer sigue siendo uno de los personajes de terror más
-populares de Internet e inspira videojuegos, cortometrajes, dibujos y relatos
-realizados por fanáticos.
-</li>
+<li>Es uno de los personajes que más inspiró videojuegos, fanarts, cortometrajes y relatos dentro del mundo de las creepypastas.</li>
 
 </ul>
 
@@ -242,11 +308,12 @@ realizados por fanáticos.
 
 <footer>
 
-Creado en HTML • Inspirado en la famosa creepypasta de Jeff the Killer.
+Expediente elaborado con fines informativos sobre un personaje ficticio del universo de las creepypastas.
 
 </footer>
 
 </div>
 
 </body>
+
 </html>
